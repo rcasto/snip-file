@@ -6,5 +6,16 @@
   "scripts": {
   },
   "author": "Richie Casto (https://github.com/rcasto)",
-  "license": "MIT"
+  "license": "MIT",
+  "bin": "./index.js",
+  "keywords": [
+    "vs-code",
+    "snippet",
+    "code-snippet",
+    "code-template"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcasto/snip-file.git"
+  }
 }
