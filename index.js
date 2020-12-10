@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require('fs');
 
 // A helper method used to read a Node.js readable stream into string
@@ -5,13 +7,13 @@ async function streamToString(readableStream) {
     return new Promise((resolve, reject) => {
         const chunks = [];
         readableStream.setEncoding('UTF8');
-        readableStream.on("data", data => {
+        readableStream.on('data', data => {
             chunks.push(data.toString());
         });
-        readableStream.on("end", () => {
+        readableStream.on('end', () => {
             resolve(chunks.join(""));
         });
-        readableStream.on("error", reject);
+        readableStream.on('error', reject);
     });
 }
 
@@ -34,9 +36,11 @@ async function generateSnippet(filePath) {
 }
 
 const numArgs = process.argv.length;
+const commandName = 'snip-file';
 
 if (numArgs < 3) {
-    throw new Error('No path to file to convert to snippet provided.');
+    console.log(`Usage: npx ${commandName} <path-to-file>`);
+    return;
 }
 
 const filePath  = process.argv[2];

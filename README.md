@@ -5,7 +5,7 @@ npx snip-file <path-to-file>
 ```
 
 You'll then get an output like:
-```
+```json
 {
     "body": [
         "This would be filled with the contents of your file"
