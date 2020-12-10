@@ -33,6 +33,12 @@ async function generateSnippet(filePath) {
     };
 }
 
+const numArgs = process.argv.length;
+
+if (numArgs < 3) {
+    throw new Error('No path to file to convert to snippet provided.');
+}
+
 const filePath  = process.argv[2];
 generateSnippet(filePath)
     .then(snippet => {
