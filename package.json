@@ -7,7 +7,7 @@
   "author": "Richie Casto (https://github.com/rcasto)",
   "license": "MIT",
   "bin": {
-    "snip-file": "index.js"
+    "snip-file": "cli.js"
   },
   "keywords": [
     "vs-code",
