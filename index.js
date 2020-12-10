@@ -27,11 +27,15 @@ async function readFileToString(filePath) {
 
 async function generateSnippet(filePath) {
     const fileAsString = await readFileToString(filePath);
-    const fileLines = fileAsString.split('\n');
+    const fileLines = fileAsString.trim().split('\n');
     return {
         body: fileLines
     };
 }
 
 const filePath  = process.argv[2];
-console.log(generateSnippet(filePath));
+generateSnippet(filePath)
+    .then(snippet => {
+        console.log(JSON.stringify(snippet, null, '\t'));
+    })
+    .catch(err => console.error(err));
