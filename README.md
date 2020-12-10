@@ -1,5 +1,4 @@
-# convert-file-to-snippet
-Pretty much does exactly what the name above says in a pretty barebones way.
+# snip-file
 You want to make a quick skeleton for a [VS Code snippet](https://code.visualstudio.com/docs/editor/userdefinedsnippets) from a file, then all ya gotta do is:
 ```
 npx snip-file <path-to-file>

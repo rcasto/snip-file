@@ -1,7 +1,7 @@
 {
-  "name": "convert-file-to-snippet",
-  "version": "1.0.0",
-  "description": "",
+  "name": "snip-file",
+  "version": "0.0.1",
+  "description": "Generate quick VS Code snippet templates from a file",
   "main": "index.js",
   "scripts": {
   },
