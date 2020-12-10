@@ -1,13 +1,14 @@
 {
   "name": "snip-file",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate quick VS Code snippet templates from a file",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Richie Casto (https://github.com/rcasto)",
   "license": "MIT",
-  "bin": "./index.js",
+  "bin": {
+    "snip-file": "index.js"
+  },
   "keywords": [
     "vs-code",
     "snippet",
