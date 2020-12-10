@@ -1,0 +1,10 @@
+{
+  "name": "convert-file-to-snippet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "Richie Casto (https://github.com/rcasto)",
+  "license": "MIT"
+}
