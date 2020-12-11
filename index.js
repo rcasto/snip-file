@@ -4,7 +4,7 @@ const fs = require('fs');
  * VS Code snipper object interface
  * https://code.visualstudio.com/docs/editor/userdefinedsnippets
  * @typedef {Object} Snippet
- * @property {string[]} prefix - defines one or more trigger words that display the snippet in IntelliSense. Substring matching is performed on prefixes, so in this case, "fc" could match "for-const"
+ * @property {string|string[]} prefix - defines one or more trigger words that display the snippet in IntelliSense. Substring matching is performed on prefixes, so in this case, "fc" could match "for-const"
  * @property {string[]} body - is one or more lines of content, which will be joined as multiple lines upon insertion
  * @property {string} description - is an optional description of the snippet displayed by IntelliSense
  */
