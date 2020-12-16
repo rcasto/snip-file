@@ -44,15 +44,17 @@ async function readFileToString(filePath) {
  * to populate the body of the snippet.
  * 
  * It will also pre-populate a prefix and description field for the user to fill out.
+ * @param {string} prefix
+ * @param {string} description
  * @param {string} filePath
  * @returns {Snippet}
  */
-async function generateSnippet(filePath) {
+async function generateSnippet(prefix, description, filePath) {
     const fileAsString = await readFileToString(filePath);
     const fileLines = fileAsString.trim().split('\n');
     return {
-        prefix: '',
-        description: '',
+        prefix,
+        description,
         body: fileLines
     };
 }
